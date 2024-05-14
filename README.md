@@ -4,7 +4,9 @@ A simple transliteration module for converting the macedonian cyrillic alphabet 
 
 # Installation
 
-`npm i macedonian-transliteration``
+```js
+npm i macedonian-transliteration
+```
 
 # Example
 
