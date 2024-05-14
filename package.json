@@ -1,0 +1,26 @@
+{
+  "name": "macedonian-transliteration",
+  "version": "1.0.4",
+  "description": "Transliteration Plugin for the Macedonian Cyrillic Alphabet",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "transliteration",
+    "macedonian"
+  ],
+  "author": "Matej Plavevski",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": ["dist", "LICENSE", "README.md", "package.json"]
+}
