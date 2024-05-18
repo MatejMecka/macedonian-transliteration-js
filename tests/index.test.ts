@@ -1,5 +1,5 @@
-import {cyrillic_to_latin}  from "../dist/cyrillic-to-latin";
-import {latin_to_cyrillic}  from "../dist/latin-to-cyrillic";
+import {cyrillic_to_latin}  from "../src/cyrillic-to-latin";
+import {latin_to_cyrillic}  from "../src/latin-to-cyrillic";
 
 describe('Testing Cyrillic to Latin - Macedonian Alphabet - uppercase letters', () => {
     // Capitalized letters
