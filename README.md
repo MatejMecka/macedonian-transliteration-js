@@ -1,5 +1,7 @@
 # Macedonian Transliteration
 
+[![codecov](https://codecov.io/github/MatejMecka/macedonian-transliteration-js/graph/badge.svg?token=VS6G3M00T6)](https://codecov.io/github/MatejMecka/macedonian-transliteration-js)
+
 A simple transliteration module for converting the macedonian cyrillic alphabet into latin, and vice versa.
 
 # Installation
