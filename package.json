@@ -22,5 +22,13 @@
   },
   "types": "dist/index.d.ts",
   "type": "module",
-  "files": ["dist", "LICENSE", "README.md", "package.json"]
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "dependencies": {
+    "tslog": "^4.9.2"
+  }
 }

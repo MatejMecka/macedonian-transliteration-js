@@ -1,3 +1,7 @@
+import { Logger } from "tslog";
+
+const logger = new Logger({ name: "translitaration-logger" });
+
 export function cyrillic_to_latin(input: string):string {
     /*
         Translitarates from Cyrillic to latin
@@ -16,8 +20,10 @@ export function cyrillic_to_latin(input: string):string {
     for (let i = 0; i < input.length; i++) {
         const char = input[i];
         if (cyrillicToLatinMap[char]) {
+            logger.info(`${cyrillicToLatinMap[char]} found in string`);
             convertedText += cyrillicToLatinMap[char];
         } else {
+            logger.info(`${cyrillicToLatinMap[char]} found in string`);
             convertedText += char;
         }
     }

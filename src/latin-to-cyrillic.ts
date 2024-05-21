@@ -1,3 +1,7 @@
+import { Logger } from "tslog";
+
+const logger = new Logger({ name: "myLogger" });
+
 export function latin_to_cyrillic(input: string) {
     /*  
         Translitarates from Latin to Cyrillic
@@ -31,15 +35,19 @@ export function latin_to_cyrillic(input: string) {
         let nextThreeChars = input.substr(i, 3);
 
         if (latinToCyrillicMap.hasOwnProperty(nextThreeChars)) {
+            logger.info(`${latinToCyrillicMap[nextThreeChars]} found in string`);
             output += latinToCyrillicMap[nextThreeChars];
             i += 3;
         } else if (latinToCyrillicMap.hasOwnProperty(nextTwoChars)) {
+            logger.info(`${latinToCyrillicMap[nextTwoChars]} found in string`);
             output += latinToCyrillicMap[nextTwoChars];
             i += 2;
         } else if (latinToCyrillicMap.hasOwnProperty(char)) {
+            logger.info(`${latinToCyrillicMap[char]} found in string`);
             output += latinToCyrillicMap[char];
             i++;
         } else {
+            logger.info("Character not found in Character Map");
             output += char;
             i++;
         }
