@@ -412,4 +412,7 @@ describe('Sentences', () => {
     test('Testing "Dzhole ima dzhamlii"', () => {
         expect(latin_to_cyrillic('Dzhole ima dzhamlii')).toBe('Џоле има џамлии');
     });
+    test('Testing special chars', () => {
+        expect(cyrillic_to_latin('@%$!.?')).toBe('@%$!.?');
+    });
 }) 
