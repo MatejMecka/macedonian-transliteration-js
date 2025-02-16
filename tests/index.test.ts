@@ -1,5 +1,4 @@
-import {cyrillic_to_latin}  from "../src/cyrillic-to-latin";
-import {latin_to_cyrillic}  from "../src/latin-to-cyrillic";
+import {cyrillic_to_latin, latin_to_cyrillic}  from "../dist/index";
 
 describe('Testing Cyrillic to Latin - Macedonian Alphabet - uppercase letters', () => {
     // Capitalized letters
@@ -279,7 +278,6 @@ describe('Testing Latin to Cyrillic - Macedonian Alphabet - Uppercase Letters', 
         expect(latin_to_cyrillic('Zh')).toBe('Ж');
     });
     test('Testing "Dzh"', () => {
-        console.log(latin_to_cyrillic('Dzh'))
         expect(latin_to_cyrillic('Dzh')).toBe('Џ');
     });
     test('Testing "Gj"', () => {
